@@ -1,6 +1,5 @@
-def common = load('common.groovy')
-
 def call() {
+    def common = load('common.groovy')
     stage('One') {
        currentBuild.displayName = currentBuild.displayName + ": VERSION_NAME"
        sh "ls -la"
